@@ -4,9 +4,9 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class AllCapitalizedWordsFromSentence {
+public class DatesFormat {
     public static void main(String[] args) {
-        Pattern p = Pattern.compile("\\b[A-Z][a-z]*\\b|\\b[A-Z]{1,}| \\b[A-Z]+\\b");
+        Pattern p = Pattern.compile("\\b\\d{2}/\\d{2}/\\d{4}\\b");
         Scanner cs = new Scanner(System.in);
         System.out.println("Enter a text");
         String input = cs.nextLine();

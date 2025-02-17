@@ -14,8 +14,11 @@ public class ValidateIPAddrress {
         System.out.println("Enter a text");
         String input = cs.nextLine();
         Matcher m = p.matcher(input);
-        while(m.find()){
-            System.out.println("Matches :" + m.group());
-        }
+       if(m.matches()){
+           System.out.println("Valid IP4 address");
+       }
+       else{
+           System.out.println("Invalid IP4 address");
+       }
     }
 }
