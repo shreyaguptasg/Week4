@@ -6,12 +6,8 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-@Retention(RetentionPolicy.RUNTIME)
-public @interface Inject {
-}
 
-
- class DIContainer {
+class DIContainer {
 
     private Map<Class<?>, Object> instances = new HashMap<>();
 
